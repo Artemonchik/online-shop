@@ -1,0 +1,25 @@
+#head {
+    width: 100%;
+    background: linear-gradient(to bottom,#d7dadd,#e2e2e2);
+    min-height: 10px;
+    font-weight: 300;
+}
+
+#head__button-block{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.head-button{
+    padding:11px;
+}
+
+.head-button__icon{
+    height: 100%;
+    padding: 6px;
+}
+#head-icon {
+    height: 25px;
+}
