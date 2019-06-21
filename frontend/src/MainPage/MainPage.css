@@ -1,9 +1,9 @@
- @font-face {
-   font-family: 'CursiveFont';
-   src:  url('./font.woff2') format('woff2');
-   font-weight: 600;
-   font-style: normal;
- }
+@font-face {
+    font-family: 'CursiveFont';
+    src: url('fonts/font.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
 
 .inscription {
     margin: 30px 0 0 0;
@@ -17,3 +17,89 @@
     letter-spacing: 1.8px;
 }
 
+.each-slide {
+    height: 400px;
+}
+
+.slide-image {
+    height: 100%;
+    background-size: 100% auto;
+}
+
+.bonuses {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(47, 51, 69, 1);
+    color: darkgray;
+    height: 40px;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.bonuses__icons {
+    height: 30px;
+    margin-right: -10px;
+    width: auto;
+}
+
+.top-views-block__left-side {
+    width: 40%;
+    float: left;
+}
+
+.top-views-block__right-side {
+    width: 60%;
+    float: right;
+}
+
+.top-views-block__img-left{
+    height: 210px;
+    width: 395px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    float: left;
+    background-size: auto 100%;
+    position: relative;
+}
+
+.top-views-block__img-right{
+    position: relative;
+    height: 431px;
+    width: 555px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+    background-size: auto 100%;
+}
+
+.top-views-block__img-left:nth-child(1) span{
+    font-size: 26pt;
+    font-weight: 600;
+    font-family: Arial, serif;
+    color: #2f3345;
+    text-align: left;
+    position: absolute;
+    top:30px;
+}
+.top-views-block__img-left:nth-child(3) span{
+    font-size: 26pt;
+    font-weight: 600;
+    font-family: Arial, serif;
+    color: #2f3345;
+    text-align: left;
+    position: absolute;
+    top:30px;
+    left: 15px;
+}
+
+.top-views-block__img-right:nth-child(2) span{
+    font-size: 26pt;
+    font-weight: 600;
+    font-family: Arial, serif;
+    color: #eeeeee;
+    text-align: left;
+    position: absolute;
+    top:170px;
+    left: 15px;
+}
