@@ -6,8 +6,8 @@ import Slider from './MySlider.js'
 import dollar from './images/dollar.png'
 import lightning from './images/lightning.png'
 import rocket from './images/rocket.png'
-import TopViews from './TopViews.js'
-
+import Navigation from '../Navigation/Navigation.js'
+import TopViews from '../TopViews/TopViews.js'
 class MainPage extends React.Component {
     constructor(props) {
         super(props);
@@ -38,8 +38,8 @@ class MainPage extends React.Component {
                         </div>
 
                     </div>
+                    <Navigation></Navigation>
                     <TopViews></TopViews>
-                    {/*<Footer></Footer>*/}
                 </Content>
             </div>
         )

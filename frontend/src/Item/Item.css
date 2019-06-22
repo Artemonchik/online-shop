@@ -1,0 +1,16 @@
+.item-block{
+    width: 245px;
+    height: 430px;
+    text-align: center;
+}
+
+
+.item-block__img-block{
+    height: 325px;
+    background-size: auto 100%;
+    width: 245px;
+}
+
+.item-block__price{
+    color:orange;
+}
