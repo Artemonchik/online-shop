@@ -1,0 +1,44 @@
+.product-page__image-block__img{
+    width: 100%;
+}
+
+#product-page{
+    background-color: white;
+    overflow: auto;
+    width: 100%;
+}
+
+#product-block{
+    width: 960px;
+    margin: 0 auto;
+}
+#product-page__image-block{
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+#product-page__parameter-block{
+    padding-left: 10px;
+    box-sizing: border-box;
+    float: right;
+    text-align: left;
+    width: 50%;
+}
+
+.product-page__item-name{
+    margin-top: 0;
+}
+
+.product-page__item-price{
+    color:orange;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.product-block__text{
+    color: #9c9c9c;
+    margin: 5px 0;
+    font-size: 12pt;
+}

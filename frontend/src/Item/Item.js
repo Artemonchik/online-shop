@@ -6,12 +6,12 @@ class Item extends React.Component {
         super(props);
     }
     render(){
-        const {imageSrc, price, name} = this.props
+        const {imageSrc, price, name} = this.props;
         return (
             <div className='item-block'>
                 <div style={{backgroundImage: `url(${imageSrc})`}} className='item-block__img-block'/>
                 <div className='item-block__name'>{name}</div>
-                <div className='item-block__price'>{price}</div>
+                <div className='item-block__price'>{price + ' рублей'}</div>
             </div>
         )
     }

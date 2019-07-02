@@ -2,16 +2,16 @@ import React from 'react';
 import './TopViews.css'
 import {Slide} from 'react-slideshow-image';
 import Item from '../Item/Item.js'
-import img1 from './images/1.jpg'
-import img2 from './images/2.jpg'
-import img3 from './images/3.jpg'
-import img4 from './images/4.png'
-import img5 from './images/5.png'
-import img6 from './images/6.png'
-import img7 from './images/7.png'
-import img8 from './images/8.jpg'
-import img9 from './images/9.png'
-import img10 from './images/10.jpg'
+import img1 from '../products-images/badboy.jpg'
+import img2 from '../products-images/darkcostume.jpg'
+import img3 from '../products-images/hoodie.jpg'
+import img4 from '../products-images/jeans.jpg'
+import img5 from '../products-images/mantshirt.jpg'
+import img6 from '../products-images/redskirt.jpg'
+import img7 from '../products-images/nicewoman.jpg'
+import img8 from '../products-images/whitedress.jpg'
+import img9 from '../products-images/t-shirt.jpg'
+import img10 from '../products-images/goodboy.jpg'
 
 const properties = {
     duration: 5000,
@@ -63,7 +63,7 @@ class TopViews extends React.Component {
                     {slideImages.map(e => {
                         return <div className='slide-block'>
                             {e.map(i=>{
-                                return <Item imageSrc={i} price={200} name={'Your item'}></Item>
+                                return <Item imageSrc={i} price={200} name={'Your item'}/>
                             })}
                         </div>
                     })}

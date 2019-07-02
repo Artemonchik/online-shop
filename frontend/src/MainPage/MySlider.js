@@ -11,7 +11,7 @@ const properties = {
     transitionDuration: 700,
     infinite: true,
     indicators: true,
-    arrows: true
+    arrows: false
 };
 
 class MySlider extends React.Component {
@@ -31,7 +31,6 @@ class MySlider extends React.Component {
                     return (
                         <div key={e} className="each-slide">
                             <div style={{backgroundImage: `url(${e})`,}} className='slide-image'>
-                                <span>{i + 1}</span>
                             </div>
                         </div>
                     )

@@ -1,0 +1,13 @@
+#product-list-block__list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#product-list-block {
+    margin: 0 auto;
+    width: 960px;
+}
+.product-list-block__title{
+    margin: 50px;
+    font-weight: 400;
+}

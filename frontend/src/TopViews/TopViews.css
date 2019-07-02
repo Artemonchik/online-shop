@@ -3,4 +3,8 @@
 }
 .slide-block{
     display: flex;
+    width:100%;
+}
+.top-views-block{
+    width: 100%;
 }

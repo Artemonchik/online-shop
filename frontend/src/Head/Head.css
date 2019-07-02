@@ -1,25 +1,43 @@
 #head {
     width: 100%;
-    background: linear-gradient(to bottom,#d7dadd,#e2e2e2);
     min-height: 10px;
     font-weight: 300;
+    padding-bottom: 30px;
 }
 
-#head__button-block{
+#head__button-panel {
+    background: linear-gradient(to bottom, #d7dadd, #e2e2e2);
+}
+
+#head__button-block {
     display: flex;
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
 }
 
-.head-button{
-    padding:11px;
+
+.head-button {
+    padding: 11px;
 }
 
-.head-button__icon{
+.head-button__icon {
     height: 100%;
     padding: 6px;
 }
+
 #head-icon {
     height: 25px;
+}
+
+.inscription {
+    margin: 30px 0 0 0;
+    font-family: 'CursiveFont', serif;
+    font-size: 19pt;
+}
+
+.lowerinscription {
+    margin: 10px 0 30px 0;
+    font-size: 10pt;
+    letter-spacing: 1.8px;
 }
