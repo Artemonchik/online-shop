@@ -35,7 +35,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'images',
-                            publicPath: './dist/images'
+                            publicPath: '/dist/images'
                         }
                     }
                 ]
@@ -47,7 +47,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'fonts',
-                            publicPath: './dist/fonts'
+                            publicPath: '/dist/fonts'
                         }
                     }
                 ]

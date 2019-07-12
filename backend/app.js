@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const path = require('path');
 const serve = require('koa-static');
-
+const send = require('koa-send');
 const webpackDevMiddleware= require('koa-webpack-dev-middleware');
 const webpack = require('webpack');
 const webpack_config = require('../webpack.config');
@@ -22,8 +22,11 @@ const app = new Koa();
 app.use(serve('frontend/public'));
 
 app.use(async (ctx, next) =>{
-   ctx.response.body = 'Hello World';
-   await next();
+   if(!ctx.path.startsWith('/api/')){
+      await send(ctx, '/index.html', { root: path.resolve('frontend/public')});
+   }else{
+      await next();
+   }
 });
 
 

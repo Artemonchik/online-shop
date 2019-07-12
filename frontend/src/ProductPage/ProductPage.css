@@ -39,6 +39,30 @@
 
 .product-block__text{
     color: #9c9c9c;
-    margin: 5px 0;
+    margin: 20px 0;
     font-size: 12pt;
+}
+
+.select-count{
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.submit-button{
+    width: 100%;
+    background-color: #2f3345 !important;
+    color:white !important;
+    padding: 10px 0 !important;
+    border-radius: 0 !important;
+}
+
+.product_page__description-block{
+    font:normal normal 400 normal 14px / 24px helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    text-decoration: none solid rgb(47, 46, 46);
+    letter-spacing: normal;
+    font-size: 14px;
+    text-align: left;
+
 }

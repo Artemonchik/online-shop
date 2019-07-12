@@ -55,7 +55,6 @@ class TopViews extends React.Component {
 
     render() {
         const {slideImages} = this.state;
-        console.log(slideImages)
         return (
             <div id='top-views-block'>
                 <h1 className='top-views-block__header'> Лидеры недели </h1>
