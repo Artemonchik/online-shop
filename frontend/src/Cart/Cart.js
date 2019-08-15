@@ -10,7 +10,6 @@ class Cart extends React.Component {
 
     render() {
         const {isActivated, toggleCart} = this.props;
-        console.log(isActivated);
         return (
             <div id='cart-block' style={{display: isActivated ? "block" : "none"}}>
                 <div id='cart-block__right-side'>
