@@ -2,17 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f04d543-3d64-4fb4-8514-4c014fbac571" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/OrderedProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/test/model-test.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/online-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/test/files/image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Cart/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/test/model-test.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/model-test.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/048e3089f72de6dfb56e47d6ec3e8f5a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/244d912acc5364d986acaebe720be83e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/29471bff5cc201164be8feb03fd09094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/2a0fc00e7a5fc89a48efbb2870b5b68b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/41de74cc9b05fb98b39ccbae9a3f8a1a.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/512562f8cab6f1956a76c256bf65b753.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/53ae48a45f8a52f9e854004b9295fe87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/62c423f4679648213b58a1240f0dcaef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/647e1128b0d2d5e43c41765132109a7e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/6b21620ae3ef58851ff0ac871605653f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/71bda32ccf50bd2ca0d87bf835bcf108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/73c992cb6e29280f85924141a2bcbf71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/77ce5800b8755a6999508a5fbd6dc046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/7974f37872cf079a83449e9bacbf5887.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/804076859c898e440ecdc503d35d9333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/8185453a0bfe83ef8d2f073138206ef2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/876f043d06b092d58d8e9c8b7969bd72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/884dedc93bcea9131ed94dfe3413c1ae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/a137734aef1b88187152cbcffb2da6ba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/a142efd09b4dee554c2b1c2c101ec8e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/a1f7790837d0c8fa72cc7947966ee5fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/a8a14a83d7aa34c3152555bd993f6bd0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/ac05a599ca1f1eb30a50f7241ec0c55d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/b0bf3ad107760e4a82013cdea0958201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/b3e5720b61c1002ec7251ddfc36c58ac.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/c3139d21c7b734bc12acf726b21de414.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/c64f26c05da87f55f1c3c55dd4b79381.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/cee9b58251fc08e4b2662c3e2aa3a4fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/d092f77ac8575ba0f3b395460cf268d2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/d5a36590b3108c63a743e25e8e66f740.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/ee0d8cd84d1af55782cc9ee9010dffd6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/dist/images/f5d5e92fd256d7f4e8afd4b6bf2a88a1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -30,40 +58,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>top-views-block</find>
-      <find>Content</find>
-      <find>product-page__parameter-block</find>
-      <find>`npm audit fix</find>
-      <find>product-block__text</find>
-      <find>select-count</find>
-      <find>submit-button</find>
-      <find>div</find>
-      <find>product-list-block__title</find>
-      <find>NavLink</find>
-      <find>cart-block</find>
-      <find>isActivated</find>
-      <find>top-container</find>
-      <find>random</find>
-      <find>add</find>
-      <find>Options</find>
-      <find>seq</find>
-      <find>console.log</find>
-      <find>sex</find>
-      <find>user</find>
-      <find>login</find>
-      <find>403</find>
-      <find>d</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>navigation-block</replace>
-      <replace>NavLink</replace>
-      <replace>Link</replace>
-      <replace>remove</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -79,23 +73,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/test/files" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Artem\WebstormProjects\online-shop\backend\routers" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\data" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\TopViews\images" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\TopViews" />
-      <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\MainPage\fonts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Artem\WebstormProjects\online-shop\backend\test\files" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\ProductPage\SelectColor" />
       <recent name="C:\Users\Artem\WebstormProjects\online-shop\frontend\src\MainPage\images" />
     </key>
@@ -112,12 +107,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.http-test">
+  <component name="RunManager" selected="npm.model-test">
+    <configuration name="sanbox.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="sanbox.js" working-dir="$PROJECT_DIR$/backend">
+      <method v="2" />
+    </configuration>
     <configuration name="http-test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="http-test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="model-test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="model-test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -135,8 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.model-test" />
         <item itemvalue="npm.http-test" />
         <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.sanbox.js" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +188,12 @@
       <workItem from="1565854272556" duration="6213000" />
       <workItem from="1565864132594" duration="3317000" />
       <workItem from="1565880735067" duration="150000" />
+      <workItem from="1565880895965" duration="2648000" />
+      <workItem from="1565995820817" duration="13870000" />
+      <workItem from="1566534391095" duration="195000" />
+      <workItem from="1566822623613" duration="517000" />
+      <workItem from="1567075118658" duration="8419000" />
+      <workItem from="1567236311219" duration="2126000" />
     </task>
     <task id="LOCAL-00001" summary="Almost created main page">
       <created>1561141115662</created>
@@ -207,17 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1562921461013</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created models, tests for models, started implementing backend, created authentication, http test for authentication">
+      <created>1565881111512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565881111512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -227,7 +241,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -238,6 +254,23 @@
     <MESSAGE value="Created main page without footer, changed components structure" />
     <MESSAGE value="Created ProductList and started creating full information page for product" />
     <MESSAGE value="basik frontend pages was ended" />
-    <option name="LAST_COMMIT_MESSAGE" value="basik frontend pages was ended" />
+    <MESSAGE value="created models, tests for models, started implementing backend, created authentication, http test for authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="created models, tests for models, started implementing backend, created authentication, http test for authentication" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/backend/test/http-test.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/backend/addons/koa-validate.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

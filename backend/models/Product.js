@@ -31,7 +31,7 @@ module.exports = function (sequelize) {
         }
     });
     Product.associate = function (models) {
-        Product.Option = Product.hasMany(models.Option,{onDelete: 'CASCADE'});
+        Product.Option = Product.hasMany(models.Option,{onDelete: 'CASCADE', as: 'options'});
         Product.hasMany(models.OrderedProduct);
     };
     return Product;

@@ -5,15 +5,15 @@ const send = require('koa-send');
 const webpackDevMiddleware = require('koa-webpack-dev-middleware');
 const webpack = require('webpack');
 const webpack_config = require('../webpack.config');
-const {mainRouter} = require('./routing.js');
-const {sequelize, Order, Product, Customer, Cart, OrderedProduct} = require('./models');
+const {mainRouter} = require('./routers/routing.js');
+const {sequelize, Order, Product, User, Cart, OrderedProduct} = require('./models');
 const {createFakeData} = require('./fake-sequelize-data');
 const passport = require('./middlewares/passport');
 const SequelizeSessionStore = require('koa-generic-session-sequelize');
 const session = require('koa-generic-session');
 const koaBody = require('koa-body');
-const logger = require('koa-logger');
-
+var koaLogger = require('koa-bunyan');
+var bunyan = require('bunyan');
 
 const compiler = webpack(webpack_config, (err, stats) => {
     if (err || stats.hasErrors()) {
@@ -23,8 +23,12 @@ const compiler = webpack(webpack_config, (err, stats) => {
     console.log('webpack initialized successful!')
 });
 
+const logger = bunyan.createLogger({name: "app"});
+
 const app = new Koa();
-app.use(logger());
+app.use(koaLogger(logger, {
+    level:'info',
+}));
 app.keys = ['mWTWHSPKdiUJqg1UKAjT8Y44Igv15VIm'];
 // app.use(webpackDevMiddleware(compiler, {
 //    publicPath: webpack_config.output.publicPath
@@ -32,7 +36,12 @@ app.keys = ['mWTWHSPKdiUJqg1UKAjT8Y44Igv15VIm'];
 sequelize.sync({force: true}).then(async function () {
     await createFakeData();
     app.use(serve('frontend/public'));
-    app.use(koaBody({multipart: true}));
+    app.use(koaBody({
+        multipart: true,
+        formidable:{
+            uploadDir: path.resolve('frontend/public/dist/')
+        }
+    }));
     app.use(session({
         store: new SequelizeSessionStore(
             sequelize, {

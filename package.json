@@ -7,7 +7,8 @@
     "start": "nodemon --watch backend --inspect ./backend/app.js  --ignore ./backend/test",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd frontend && npm i && cd ..",
-    "http-test": " mocha ./backend/test/http-test.js"
+    "http-test": " mocha ./backend/test/http-test.js",
+    "model-test": " mocha ./backend/test/model-test.spec.js"
   },
   "author": "artemonchik",
   "license": "ISC",
@@ -26,10 +27,12 @@
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "bunyan": "^1.8.12",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "koa": "^2.7.0",
     "koa-body": "^4.1.1",
+    "koa-bunyan": "^1.0.2",
     "koa-generic-session": "^2.0.1",
     "koa-generic-session-sequelize": "^2.2.0",
     "koa-logger": "^3.2.1",

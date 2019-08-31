@@ -8,14 +8,14 @@ const sequelize = new Sequelize(db.name,db.username, db.password, {
 });
 
 const Cart = require('./Cart.js')(sequelize);
-const Customer = require('./Customer')(sequelize);
+const User = require('./User')(sequelize);
 const Order = require('./Order')(sequelize);
 const Product = require('./Product')(sequelize);
 const OrderedProduct = require('./OrderedProduct')(sequelize);
 const Option = require('./Option.js')(sequelize)
 const models = {
     Cart,
-    Customer,
+    User,
     Order,
     Product,
     OrderedProduct,

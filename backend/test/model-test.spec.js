@@ -1,7 +1,7 @@
 const chai = require('chai');
 const faker = require('faker');
 chai.should();
-const {sequelize, Order, Product, Customer, Cart, OrderedProduct} = require('../models');
+const {sequelize, Order, Product, User, Cart, OrderedProduct} = require('../models');
 describe('test database', function () {
     this.timeout(15000);
     describe('test success starting sequelize', function () {
@@ -17,14 +17,14 @@ describe('test database', function () {
         describe('test instances of models', function () {
             it('there must be an error after creating 2 customer with the same email', function f(done) {
                 let email = faker.internet.email();
-                Customer.create({
+                User.create({
                     name: faker.name.firstName(),
                     surname: faker.name.lastName(),
                     address: faker.address.streetAddress(),
                     password: faker.internet.password(),
                     email,
                 }).then((c1) => {
-                    return Customer.create({
+                    return User.create({
                         name: faker.name.firstName(),
                         surname: faker.name.lastName(),
                         address: faker.address.streetAddress(),
@@ -39,14 +39,14 @@ describe('test database', function () {
             })
         });
         describe('testing assotiations between all models', function () {
-            let customers = [];
+            let users = [];
             let products = [];
             let carts = [];
             let orders = [];
             let orderedProducts = [];
             before(async function () {
                 for (let i = 0; i < 10; i++) {
-                    customers.push(await Customer.create({
+                    users.push(await User.create({
                         name: faker.name.firstName(),
                         surname: faker.name.lastName(),
                         address: faker.address.streetAddress(),
@@ -105,7 +105,7 @@ describe('test database', function () {
                 }));
                 await orderedProducts[4].setProduct(products[3]);
                 for (let i = 0; i < 10; i++) {
-                    await customers[i].setCart(carts[i])
+                    await users[i].setCart(carts[i])
                 }
                 await carts[0].addOrderedProduct(orderedProducts[0]);
                 await carts[0].addOrderedProduct(orderedProducts[1]);
@@ -116,15 +116,15 @@ describe('test database', function () {
                 await orders[0].addOrderedProduct(orderedProducts[1]);
                 await orders[1].addOrderedProduct(orderedProducts[2]);
                 await orders[0].addOrderedProduct(orderedProducts[3]);
-                await customers[0].addOrder(orders[0]);
-                await customers[0].addOrder(orders[1]);
+                await users[0].addOrder(orders[0]);
+                await users[0].addOrder(orders[1]);
             });
             it('product 1 must be in two ordered products', async function () {
                 const op = await products[1].getOrderedProducts();
                 op.should.have.length(2);
             });
             it('customer[0] must have 3 ordered producti in his cart with products 0 2 1', async function () {
-                const cart = await customers[0].getCart();
+                const cart = await users[0].getCart();
                 const op = await cart.getOrderedProducts();
                 op.should.have.length(3);
                 const arr = [1, 2, 3];
@@ -137,7 +137,7 @@ describe('test database', function () {
                 arr.should.have.length(0)
             });
             it('customer[0] must have 2 orders with total 4 products', async function () {
-                const ods = await customers[0].getOrders();
+                const ods = await users[0].getOrders();
                 ods.should.have.length(2);
                 const arr = [];
                 for (let i = 0; i < 2; i++) {
@@ -148,27 +148,27 @@ describe('test database', function () {
             });
             after(async function () {
                 for (let i = 0; i < 10; i++) {
-                    await customers[i].destroy();
+                    await users[i].destroy();
                     await carts[i].destroy();
                     if (i <= 4) await orderedProducts[i].destroy();
                     await orders[i].destroy();
                     await products[i].destroy();
                 }
                 products = [];
-                customers = [];
+                users = [];
                 carts = [];
                 orders = [];
                 orderedProducts = [];
             })
         });
         describe('test custom methods of object', function () {
-            let customer = null;
+            let user = null;
             let cart = null;
             let orderedProduct = null;
             let product = null;
             describe('test custom methods of Customer model', function () {
                 beforeEach(async function () {
-                    customer = await Customer.create({
+                    user = await User.create({
                         name: faker.name.firstName(),
                         surname: faker.name.lastName(),
                         address: faker.address.streetAddress(),
@@ -176,7 +176,7 @@ describe('test database', function () {
                         email: faker.internet.email(),
                         Cart: {}
                     }, {
-                        include: Customer.Cart
+                        include: User.Cart
                     });
                     product = await Product.create({
                         name: faker.lorem.word(),
@@ -202,36 +202,36 @@ describe('test database', function () {
                 });
 
                 afterEach(async function () {
-                    const cart = await customer.getCart();
+                    const cart = await user.getCart();
                     await cart.destroy();
-                    await customer.destroy();
+                    await user.destroy();
                     await orderedProduct.destroy();
                     await product.destroy();
                 });
                 it('customer.addOrderedProduct() must add product in his cart', async function () {
-                    await customer.addOrderedProduct(orderedProduct);
-                    const cart = await customer.getCart();
+                    await user.addOrderedProduct(orderedProduct);
+                    const cart = await user.getCart();
                     const pr = (await cart.getOrderedProducts())[0];
                     pr.id.should.be.equal(orderedProduct.id)
                 });
                 it('customer.removeOrderedProduct() must remove product from his cart', async function () {
-                    await customer.removeOrderedProduct(orderedProduct);
-                    const cart = await customer.getCart();
+                    await user.removeOrderedProduct(orderedProduct);
+                    const cart = await user.getCart();
                     const pr = await cart.getOrderedProducts();
                     pr.should.have.length(0)
                 });
                 it('customer.makeOrder() should add new order with items in a cart and clear cart', async function () {
-                    await customer.addOrderedProduct(orderedProduct);
-                    await customer.makeOrder();
-                    const cart = await customer.getCart();
+                    await user.addOrderedProduct(orderedProduct);
+                    await user.makeOrder();
+                    const cart = await user.getCart();
                     const cartOrderedProducts = await cart.getOrderedProducts();
                     cartOrderedProducts.should.have.length(0);
 
-                    const customerOrders = await customer.getOrders();
-                    customerOrders.should.have.length(1);
-                    const customerOrderedProducts = await customerOrders[0].getOrderedProducts();
-                    customerOrderedProducts.should.have.length(1);
-                    const arr1 = customerOrderedProducts.map(e => e.id);
+                    const userOrders = await user.getOrders();
+                    userOrders.should.have.length(1);
+                    const userOrderedProducts = await userOrders[0].getOrderedProducts();
+                    userOrderedProducts.should.have.length(1);
+                    const arr1 = userOrderedProducts.map(e => e.id);
                     arr1.sort();
                     const arr2 = [orderedProduct.id];
                     arr2.sort();
@@ -239,8 +239,8 @@ describe('test database', function () {
                 });
 
                 it('customer.addProduct(product, options) should add product in a cart', async function () {
-                    await customer.addProduct(product, {color: 'white', size: 37, quantity: 3});
-                    const cart = await customer.getCart();
+                    await user.addProduct(product, {color: 'white', size: 37, quantity: 3});
+                    const cart = await user.getCart();
                     const [op] = await cart.getOrderedProducts();
                     const p = await op.getProduct();
                     product.id.should.be.equal(p.id)
